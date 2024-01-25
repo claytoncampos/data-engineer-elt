@@ -4,8 +4,50 @@ Overview
 Projeto de ETL/ELT
 Extração de dados através de web scraping, Transformação de dados usando pandas e Load para banco de dados Postgres, Datalake e Data LakeHouse.
 
-Utilizando Astro-sdk Airflow, Minio, Postgres e Dremio
+Tecnologias Utilizadas:
+========
 
+Astro-sdk Airflow
+Minio
+Postgres
+Dremio
+
+### Instalação e Configuração
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/claytoncampos/data-engineer-elt.git
+cd data-engineer-elt
+```
+
+2. Configure a versão correta do Python com `pyenv`:
+
+```bash
+pyenv install 3.12
+pyenv local 3.12
+
+ou instale o poetry 
+pip install poetry
+```
+
+3. Instale as dependências do projeto:
+
+```bash
+# Instale o Docker e docker-compose
+# Intale o pyenv
+pip install pyenv
+# crie seu ambiente virtual
+python -m venv .venv
+# O padrao é utilizar .venv
+source .venv/bin/activate
+# Usuários Linux e mac
+.venv\Scripts\Activate
+# Usuários Windows
+pip install -r requirements.txt 
+# poetry
+poetry install
+ ```
 
 Project Contents
 ================
