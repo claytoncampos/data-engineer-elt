@@ -1,0 +1,39 @@
+airflow:
+
+  connections:
+    - conn_id: aws_default
+      conn_type: aws
+      conn_host:
+      conn_schema:
+      conn_login:
+      conn_password:
+      conn_port:
+      conn_extra: {"aws_access_key_id": "minioadmin", "aws_secret_access_key": "minioadmin", "endpoint_url": "http://host.docker.internal:9000"}
+
+    - conn_id: postgres_default
+      conn_type: postgres
+      conn_host: host.docker.internal
+      conn_schema: postgres
+      conn_login: postgres
+      conn_password: postgres
+      conn_port: 5432
+
+
+    - conn_id: snowflake_default
+      conn_type: snowflake
+      conn_host:
+      conn_schema:
+      conn_login: CLAYTONCAMPOS
+      conn_password: Q1w2e3r4!
+      conn_port:
+      conn_extra:
+        example_extra_field: {"extra_snowflake_account": "vg65446.us-central1.gcp","extra_snowflake_database": "PYTHIANDB","extra_snowflake_warehouse": "COMPUTE_WH"}
+
+  pools:
+    - pool_name:
+      pool_slot:
+      pool_description:
+
+  variables:
+    - variable_name:
+      variable_value:
